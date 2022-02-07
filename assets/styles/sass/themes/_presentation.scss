@@ -1,0 +1,27 @@
+.presentation-container{
+    text-align: center;
+
+    h3{
+        
+        margin: 50px auto;
+        font-size: 3rem;
+        color: $color-1;
+        font-family: $font-1;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    p{
+      
+        font-size: 1.5rem;
+        color: $color-1;
+        font-family: $font-1;
+        padding: 0px 200px 0px;
+        margin: 30px 30px 90px 30px;
+    }
+    #btn-cv{
+        text-align: center;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 20px;
+    }
+}

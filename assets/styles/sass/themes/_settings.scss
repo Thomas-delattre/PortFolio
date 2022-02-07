@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "font-Architects";
+    src: url(../assets/fonts/ArchitectsDaughter-Regular.ttf);
+}
+
+
+$font-1: "font-Architects";
+
+$color-1: rgb(243, 240, 240);
+$color-2: rgb(12, 12, 12);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+body{
+     background: rgb(0, 0, 0);
+}
