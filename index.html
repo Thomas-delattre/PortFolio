@@ -14,10 +14,10 @@
 <header>
     <div class="nav-bar">
         <ul>
-            <li><a href="skills">Skills</a></li>
-            <li><a href="#">Cv</a></li>
-            <li><a href="#">PorteFolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#cv">Cv</a></li>
+            <li><a href="#portfolio">PorteFolio</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="titre">
             <h1>Thomas Delattre</h1>
@@ -33,13 +33,13 @@
                 <h3>presentation</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolorem dignissimos vitae quidem
                     inventore numquam sapiente possimus ullam, quasi impedit.</p>
-                <a href="#">
+                <a href="#" id="cv">
                     <input type="button" value="Mon cv" id="btn-cv"></a>
 
             </div>
         </div>
     </section>
-    <section>
+    <section id="skills">
         <div class="skills">
             <div class="col-md-6  p-4" id="col-container">
                 <h4 class="mb-4">Langages & Frameworks</h4>
@@ -74,14 +74,14 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="portfolio">
         <div class="container-card">
             <div class="col">
                 <div class="card">
                     <img src="./assets/img/Hackathon.png" class="card-img-top" alt="image du Hackathon">
                     <div class="card-body">
                         <h5 class="card-title">Hackathon</h5>
-                        <p class="card-text">Hackathon en équipe lors de ma formation au Campus du lac.</p>
+                        <p class="card-text">Hackathon en équipe lors de<br> ma formation au Campus du lac.</p>
                         <span><img src="./assets/icons/html.svg"><img src="./assets/icons/css.svg"><img
                                 src="./assets/icons/sass.svg"><img src="./assets/icons/js.svg"></span>
                         <a href="https://thomas-delattre.github.io/Hackathon-20022-01-24/" type="button
@@ -153,24 +153,32 @@
 
 
     </section>
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-left">
+                <ul>
+                    <li><img src="./assets/icons/location.svg">Bordeaux</li>
+                    <li><img src="./assets/icons/mail.svg">delattre.thomas@cegetel.net</li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <img src="./assets/icons/github.svg" class="icon-border">
+                <img src="./assets/icons/linkedin.svg" class="icon-border">
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="./styles/Js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <section>
-        <div class="form-container">
-            <form action="" class="grid">
-                <span>Name</span>
-                <span>Email</span>
-                <input type="text">
-                <input type="text">
-                <span>Message</span>
-                <textarea cols="30" rows="10"></textarea>
-                <input type="button" value="Send Message" class="btn">
-            </form>
-        </div>
-    </section>
+
 
 </body>
 
