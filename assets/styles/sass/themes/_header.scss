@@ -1,78 +1,102 @@
 header{
     .nav-bar{
         
-            background-image: url(../img/pc-portable.png);
-            background-position: center;
-            background-size: cover;
-            min-height: 100vh;
-        }
-        ul{
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-        }
-        li{
-            
-            margin: 20px;
-            // border: 1px solid;
-            // // box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.274);
-            // // border-radius: 10px;
-            // // background-color: rgba(243, 243, 243, 0);
-            // padding: 10px;
-        }
-        a{
-          color: white;  
-        }
-        li:hover{
-            transform: scale(1.1);
-            transition: 0.3s;
-        }
-        a:hover{
-            color: white;
-        }
+        background-image: url(../img/pc-portable.png);
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
+        position: relative;
     }
+    
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    li{
+        
+        margin: 20px;
+        // border: 1px solid;
+        // // box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.274);
+        // // border-radius: 10px;
+        // // background-color: rgba(243, 243, 243, 0);
+        // padding: 10px;
+    }
+     }
+                a{
+                    font-family: $font-1;
+                    color: white;  
+                    &:hover{
+                        color: white;
+                    }
+                 }
+       .underline {
+          display: inline-block;
+          position: relative;
+          color: $color-1;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background: rgb(255,255,255);
+            background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(54, 54, 54) 100%);
+            transform-origin: bottom right;
+            transition: transform 0.35s ease-out;
+          }
+          &:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+          }
+        }
+        
+        
     .titre{
         text-align: center;
-        margin-top: 250px;
+       margin-top: 250px;
         // h1{
-        //     font-size: 3.5rem;
-        //     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        //     text-shadow: 1px 2px 2px rgb(65, 64, 64);
-        //     margin: 10px;
+            //     font-size: 3.5rem;
+            //     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            //     text-shadow: 1px 2px 2px rgb(65, 64, 64);
+            //     margin: 10px;
         h1{
             width: 490px;
             display: inline-block;
             margin: 0;
-            background-color: rgba(0, 0, 0, 0.534);
-        
-            color: rgb(240, 238, 238);
-            font-family: $font-1;
+           // background-color: rgba(0, 0, 0, 0.534);
+            
+            color: rgba(240, 240, 240, 0.952);
+            font-family: 'Architects Daughter', cursive;
             font-size: 3.5em;
             white-space: nowrap;
             overflow: hidden;
             border-right: 3px solid rgb(240, 238, 238);
-            animation: cursor 1s infinite linear,
-                       typing 7s steps(14) infinite both;
-          }
-          
-          @keyframes cursor{
+            animation: cursor 7s infinite linear,
+            typing 5s steps(11) infinite both;
+        }
+        
+        @keyframes cursor{
             0%{border-color: transparent;}
             50%{border-color: rgb(37, 37, 37);}
             100%{border-color: transparent;}
-          }
-          
-          @keyframes typing{
+        }
+        
+        @keyframes typing{
             0%{ width: 0;}
             30%{ width: 500px;}
             70%{ width: 500px;}
             90%{ width: 0;}
             100%{ width: 0;}
-          }
+        }
         h2{
             font-size: 2rem;
             font-family: $font-1;
             color: rgb(240, 238, 238);
             
         }
+        
     }
     

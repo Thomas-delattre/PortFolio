@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 @font-face {
   font-family: "font-Architects";
-  src: url(../assets/fonts/ArchitectsDaughter-Regular.ttf);
+  src: url(./assets/fonts/ArchitectsDaughter-Regular.ttf);
 }
 
 * {
@@ -21,11 +22,34 @@ body {
   background: black;
 }
 
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: none;
+  color: #f3f0f0;
+  cursor: pointer;
+  font-size: 2rem;
+  mix-blend-mode: difference;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#backToTop:hover {
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
 header .nav-bar {
   background-image: url(../img/pc-portable.png);
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+  position: relative;
 }
 
 header ul {
@@ -44,19 +68,46 @@ header li {
   margin: 20px;
 }
 
-header a {
+a {
+  font-family: "Architects Daughter", cursive;
   color: white;
 }
 
-header li:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+a:hover {
+  color: white;
 }
 
-header a:hover {
-  color: white;
+.underline {
+  display: inline-block;
+  position: relative;
+  color: #f3f0f0;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: white;
+  background: -webkit-gradient(linear, left top, right top, from(white), to(#363636));
+  background: linear-gradient(90deg, white 0%, #363636 100%);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.35s ease-out;
+  transition: -webkit-transform 0.35s ease-out;
+  transition: transform 0.35s ease-out;
+  transition: transform 0.35s ease-out, -webkit-transform 0.35s ease-out;
+}
+
+.underline:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
 }
 
 .titre {
@@ -68,15 +119,14 @@ header a:hover {
   width: 490px;
   display: inline-block;
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.534);
-  color: #f0eeee;
-  font-family: "font-Architects";
+  color: rgba(240, 240, 240, 0.952);
+  font-family: 'Architects Daughter', cursive;
   font-size: 3.5em;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid #f0eeee;
-  -webkit-animation: cursor 1s infinite linear, typing 7s steps(14) infinite both;
-          animation: cursor 1s infinite linear, typing 7s steps(14) infinite both;
+  -webkit-animation: cursor 7s infinite linear, typing 5s steps(11) infinite both;
+          animation: cursor 7s infinite linear, typing 5s steps(11) infinite both;
 }
 
 @-webkit-keyframes cursor {
@@ -141,19 +191,20 @@ header a:hover {
 
 .titre h2 {
   font-size: 2rem;
-  font-family: "font-Architects";
+  font-family: "Architects Daughter", cursive;
   color: #f0eeee;
 }
 
 .presentation-container {
   text-align: center;
+  border-bottom: 1px solid white;
 }
 
 .presentation-container h3 {
   margin: 50px auto;
   font-size: 3rem;
   color: #f3f0f0;
-  font-family: "font-Architects";
+  font-family: "Architects Daughter", cursive;
   font-weight: bold;
   text-transform: capitalize;
 }
@@ -161,22 +212,63 @@ header a:hover {
 .presentation-container p {
   font-size: 1.5rem;
   color: #f3f0f0;
-  font-family: "font-Architects";
+  font-family: "Architects Daughter", cursive;
   padding: 0px 200px 0px;
   margin: 30px 30px 90px 30px;
+  max-width: 1800px;
+}
+
+.presentation-container #centeralign {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.presentation-container #btn-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .presentation-container #btn-cv {
   text-align: center;
   padding: 10px;
   border: 1px solid white;
+  color: #f3f0f0;
+  background-color: #0c0c0c;
   border-radius: 20px;
+  margin-bottom: 30px;
+  font-family: "Architects Daughter", cursive;
+}
+
+.presentation-container #btn-cv:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 2ms;
+  transition: 2ms;
+  -webkit-box-shadow: 2px 2px 3px white;
+          box-shadow: 2px 2px 3px white;
 }
 
 #col-container {
   min-width: 300px;
   max-width: 500px;
   margin: 40px;
+}
+
+#titre-skills {
+  margin: 50px auto;
+  font-size: 3rem;
+  color: #f3f0f0;
+  font-family: "Architects Daughter", cursive;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 section {
@@ -212,11 +304,13 @@ section {
 h4 {
   font-size: 1.7rem;
   margin: 10px;
+  font-family: "Architects Daughter", cursive;
 }
 
 h6 {
   font-size: 1.1rem;
   margin: 10px;
+  font-family: "Architects Daughter", cursive;
 }
 
 .progress-1 {
@@ -295,6 +389,20 @@ h6 {
   margin-bottom: 10px;
 }
 
+#portfolio {
+  border-top: 1px solid white;
+}
+
+#titre-portfolio {
+  margin: 50px auto;
+  font-size: 3rem;
+  color: #f3f0f0;
+  font-family: "Architects Daughter", cursive;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+}
+
 .container-card {
   background-color: black;
   display: -webkit-box;
@@ -370,7 +478,14 @@ h6 {
   border-radius: 10px;
   background-color: black;
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+}
+
+.button-card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 2ms;
+  transition: 2ms;
 }
 
 .form-container {
@@ -379,19 +494,14 @@ h6 {
   border-top: 1px solid white;
 }
 
-.form {
-  position: relative;
+.form h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 30px;
 }
 
-.form::after {
-  content: "";
-  position: absolute;
-  border-bottom: 1px solid white;
-  width: 70%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: -10px;
+.form {
+  position: relative;
 }
 
 .grid {
@@ -516,5 +626,14 @@ input, textarea {
   -webkit-transition: 3ms;
   transition: 3ms;
   cursor: pointer;
+}
+
+li {
+  margin: 20px;
+  color: #f3f0f0;
+}
+
+li img {
+  margin-right: 5px;
 }
 /*# sourceMappingURL=style.css.map */

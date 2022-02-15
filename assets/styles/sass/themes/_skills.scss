@@ -3,6 +3,15 @@
     max-width: 500px;
     margin: 40px;
 }
+#titre-skills{
+    margin: 50px auto;
+    font-size: 3rem;
+    color: #f3f0f0;
+    font-family: $font-1;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
 section{
     background-color: rgb(0, 0, 0);
 }
@@ -34,10 +43,12 @@ section{
 h4{
     font-size: 1.7rem;
     margin: 10px;
+    font-family: $font-1;
 }
 h6{
     font-size: 1.1rem;
     margin: 10px;
+    font-family: $font-1;
 }
 .progress-1{
     background-color: white;

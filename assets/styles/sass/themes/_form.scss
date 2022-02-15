@@ -3,18 +3,24 @@
     padding: 30px;
     border-top: 1px solid white;
 }
+.form h2
+{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 30px;
+}
 .form{
     position: relative;
   }
-  .form::after{
-    content: "";
-    position: absolute;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    width: 70%;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -10px;
-  }
+  // .form::after{
+  //   content: "";
+  //   position: absolute;
+  //   border-bottom: 1px solid rgb(255, 255, 255);
+  //   width: 70%;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   bottom: -10px;
+  // }
   .grid {
     width: 40%;
     max-width: 600px;

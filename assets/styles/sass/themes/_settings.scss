@@ -1,10 +1,11 @@
 @font-face {
     font-family: "font-Architects";
-    src: url(../assets/fonts/ArchitectsDaughter-Regular.ttf);
+    src: url(./assets/fonts/ArchitectsDaughter-Regular.ttf);
 }
+@import 
+    url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
-
-$font-1: "font-Architects";
+$font-1:'Architects Daughter', cursive;
 
 $color-1: rgb(243, 240, 240);
 $color-2: rgb(12, 12, 12);
@@ -22,4 +23,23 @@ a{
 }
 body{
      background: rgb(0, 0, 0);
+}
+#backToTop {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background: none;
+	color: $color-1;
+	cursor: pointer;
+	font-size: 2rem;
+	mix-blend-mode: difference;
+    transform: rotate(180deg);
+	&:hover {
+		transition: 0.3s ease-in;
+		//transform: translateY(-1px);
+	}
 }
