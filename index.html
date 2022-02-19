@@ -28,7 +28,7 @@
     </div>
 </header>
 
-<button id="backToTop" title="Go to top"><img src="./assets/icons/arrow.svg"></img></button>
+<button id="backToTop" title="Go to top"><img src="./assets/icons/arrow.svg" alt="icone fleche"></img></button>
 
 <body>
     <section>
@@ -55,12 +55,12 @@
                 <h4 class="mb-4">Langages & Frameworks</h4>
                 <h6>HTML</h6>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 80%"
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 70%"
                         aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"> </div>
                 </div>
                 <h6 class="mt-2">CSS</h6>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%"
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 65%"
                         aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <h6 class="mt-2">Bootstrap</h6>
@@ -70,12 +70,12 @@
                 </div>
                 <h6 class="mt-2">SASS</h6>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 66%"
+                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 50%"
                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <h6 class="mt-2">Javascript</h6>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 25%"
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 20%"
                         aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
@@ -84,11 +84,11 @@
             </div>
         </div>
     </section>
-    <section id=" portfolio">
+    <section id="portfolio">
         <h3 id="titre-portfolio">portfolio</h3>
         <div class="container-card">
             <div class="col">
-                <div class="card" data-aos="zoom-out-right" data-aos-duration="2000">
+                <div class="card" data-aos="flip-left" data-aos-duration="2000" id="card-1">
                     <img src="./assets/img/Hackathon.png" class="card-img-top" alt="image du Hackathon">
                     <div class="card-body">
                         <h5 class="card-title">Hackathon</h5>
@@ -101,7 +101,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" data-aos="zoom-out-right" data-aos-duration="2000">
+                <div class="card" data-aos="flip-left" data-aos-duration="2000" id="card-2">
                     <img src="./assets/img/La-Montagne.png" class="card-img-top" alt="image projet montagne">
                     <div class="card-body">
                         <h5 class="card-title">La Montagne</h5>
@@ -114,7 +114,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" data-aos="zoom-out-right" data-aos-duration="2000">
+                <div class="card" data-aos="flip-left" data-aos-duration="2000" id="card-3">
                     <img src="./assets/img/Resto.png" class="card-img-top" alt="image projet restaurant">
                     <div class="card-body">
                         <h5 class="card-title">The Resto</h5>
@@ -126,19 +126,20 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" data-aos="zoom-out-left" data-aos-duration="2000">
+                <div class="card" data-aos="flip-right" data-aos-duration="2000" id="card-4">
                     <img src="./assets/img/App-rencontre.png" class="card-img-top" alt="image application rencontre">
                     <div class="card-body">
                         <h5 class="card-title">App-rencontre</h5>
                         <p class="card-text">Application de rencontre en Js</p>
                         <span><img src="./assets/icons/html.svg"><img src="./assets/icons/css.svg"><img
                                 src="./assets/icons/js.svg"></span>
-                        <a href="" type="button" class="button-card">Découvrir</a>
+                        <a href="https://thomas-delattre.github.io/App-Rencontre/" type="button"
+                            class="button-card">Découvrir</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card" data-aos="zoom-out-left" data-aos-duration="2000">
+                <div class="card" data-aos="flip-right" data-aos-duration="2000" id="card-5">
                     <img src="./assets/img/movie.png" class="card-img-top" alt="image application rencontre">
                     <div class="card-body">
                         <h5 class="card-title">App-Movie</h5>
@@ -152,7 +153,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" data-aos="zoom-out-left" data-aos-duration="2000">
+                <div class="card" data-aos="flip-right" data-aos-duration="2000" id="card-6">
                     <img src="./assets/img/Run.png" class="card-img-top" alt="image application rencontre">
                     <div class="card-body">
                         <h5 class="card-title">Run</h5>
@@ -195,6 +196,7 @@
                 <a href="https://www.linkedin.com/in/thomas-delattre-dev/">
                     <img src="./assets/icons/linkedin.svg" class="icon-border">
                 </a>
+
             </div>
         </div>
 

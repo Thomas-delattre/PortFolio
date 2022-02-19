@@ -6,7 +6,24 @@ header{
         background-size: cover;
         min-height: 100vh;
         position: relative;
-    }
+        &:before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: #161616;
+            animation: animBefore 1.5s ease forwards;
+            animation-delay: 0.8s;
+          
+            @keyframes animBefore {
+                to {
+                    opacity: 0;
+                }
+            }
+         }
+       }
     
     ul{
         display: flex;
@@ -66,16 +83,16 @@ header{
             width: 490px;
             display: inline-block;
             margin: 0;
-           // background-color: rgba(0, 0, 0, 0.534);
+            background-color: rgba(0, 0, 0, 0.534);
             
             color: rgba(240, 240, 240, 0.952);
             font-family: 'Architects Daughter', cursive;
-            font-size: 3.5em;
+            font-size: 5em;
             white-space: nowrap;
             overflow: hidden;
             border-right: 3px solid rgb(240, 238, 238);
             animation: cursor 7s infinite linear,
-            typing 5s steps(11) infinite both;
+            typing 5s steps(15) infinite both;
         }
         
         @keyframes cursor{
@@ -86,8 +103,8 @@ header{
         
         @keyframes typing{
             0%{ width: 0;}
-            30%{ width: 500px;}
-            70%{ width: 500px;}
+            30%{ width: 650px;}
+            70%{ width: 650px;}
             90%{ width: 0;}
             100%{ width: 0;}
         }
@@ -96,7 +113,63 @@ header{
             font-family: $font-1;
             color: rgb(240, 238, 238);
             
+            
         }
         
     }
+    @media (max-width: 760px){
+        .titre{
+             h1{
+                font-size: 2.5rem;
+                 
+        @keyframes typing{
+            0%{ width: 0;}
+            30%{ width: 350px;}
+            70%{ width: 350px;}
+            90%{ width: 0;}
+            100%{ width: 0;}
+        }
+                }
+        }
+    }
+    @media (max-width: 550px){
+        .nav-bar{
+            a{
+                font-size: 1rem;
+            }
+        }
+    }
+    @media (max-width: 376px){
+        .nav-bar{
+            li{
+                margin: 8px;
+            }
+            a{
+                font-size: 0.9rem;
+                
+            }
+        }
+        .titre{
+            h1{
+                font-size: 1.7rem;
+            
+                @keyframes typing{
+                    0%{ width: 0;}
+                    30%{ width: 210px;}
+                    70%{ width: 210px;}
+                    90%{ width: 0;}
+                   100%{width: 0;}
+                    
+            }
+        }
+            h2{
+                font-size: 1.2rem;
+                background-color: rgba(0, 0, 0, 0.534);
+                margin-left: 70px;
+                width: 170px;
+            
+            }
+        }
+
     
+    }

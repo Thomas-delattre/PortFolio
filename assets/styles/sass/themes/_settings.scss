@@ -23,12 +23,14 @@ a{
 }
 body{
      background: rgb(0, 0, 0);
-}
+	
+  }
 #backToTop {
 	display: none;
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
+	
 	z-index: 99;
 	border: none;
 	outline: none;
@@ -41,5 +43,11 @@ body{
 	&:hover {
 		transition: 0.3s ease-in;
 		//transform: translateY(-1px);
+	}
+}
+@media (max-width: 376px){
+	#backToTop{
+    opacity: 0;
+
 	}
 }

@@ -44,12 +44,44 @@ body {
   transition: 0.3s ease-in;
 }
 
+@media (max-width: 376px) {
+  #backToTop {
+    opacity: 0;
+  }
+}
+
 header .nav-bar {
   background-image: url(../img/pc-portable.png);
   background-position: center;
   background-size: cover;
   min-height: 100vh;
   position: relative;
+}
+
+header .nav-bar:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #161616;
+  -webkit-animation: animBefore 1.5s ease forwards;
+          animation: animBefore 1.5s ease forwards;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+@-webkit-keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
 }
 
 header ul {
@@ -119,14 +151,15 @@ a:hover {
   width: 490px;
   display: inline-block;
   margin: 0;
+  background-color: rgba(0, 0, 0, 0.534);
   color: rgba(240, 240, 240, 0.952);
   font-family: 'Architects Daughter', cursive;
-  font-size: 3.5em;
+  font-size: 5em;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid #f0eeee;
-  -webkit-animation: cursor 7s infinite linear, typing 5s steps(11) infinite both;
-          animation: cursor 7s infinite linear, typing 5s steps(11) infinite both;
+  -webkit-animation: cursor 7s infinite linear, typing 5s steps(15) infinite both;
+          animation: cursor 7s infinite linear, typing 5s steps(15) infinite both;
 }
 
 @-webkit-keyframes cursor {
@@ -158,10 +191,10 @@ a:hover {
     width: 0;
   }
   30% {
-    width: 500px;
+    width: 650px;
   }
   70% {
-    width: 500px;
+    width: 650px;
   }
   90% {
     width: 0;
@@ -176,10 +209,10 @@ a:hover {
     width: 0;
   }
   30% {
-    width: 500px;
+    width: 650px;
   }
   70% {
-    width: 500px;
+    width: 650px;
   }
   90% {
     width: 0;
@@ -193,6 +226,104 @@ a:hover {
   font-size: 2rem;
   font-family: "Architects Daughter", cursive;
   color: #f0eeee;
+}
+
+@media (max-width: 760px) {
+  .titre h1 {
+    font-size: 2.5rem;
+  }
+  @-webkit-keyframes typing {
+    0% {
+      width: 0;
+    }
+    30% {
+      width: 350px;
+    }
+    70% {
+      width: 350px;
+    }
+    90% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    30% {
+      width: 350px;
+    }
+    70% {
+      width: 350px;
+    }
+    90% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .nav-bar a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .nav-bar li {
+    margin: 8px;
+  }
+  .nav-bar a {
+    font-size: 0.9rem;
+  }
+  .titre h1 {
+    font-size: 1.7rem;
+  }
+  @-webkit-keyframes typing {
+    0% {
+      width: 0;
+    }
+    30% {
+      width: 210px;
+    }
+    70% {
+      width: 210px;
+    }
+    90% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    30% {
+      width: 210px;
+    }
+    70% {
+      width: 210px;
+    }
+    90% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  .titre h2 {
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.534);
+    margin-left: 70px;
+    width: 170px;
+  }
 }
 
 .presentation-container {
@@ -253,6 +384,29 @@ a:hover {
   transition: 2ms;
   -webkit-box-shadow: 2px 2px 3px white;
           box-shadow: 2px 2px 3px white;
+}
+
+@media (max-width: 860px) {
+  .presentation-container p {
+    padding: 0px 100px;
+  }
+}
+
+@media (max-width: 550px) {
+  .presentation-container p {
+    margin: 50px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 340px) {
+  .presentation-container h3 {
+    font-size: 1.5rem;
+  }
+  .presentation-container p {
+    padding: 0;
+    font-size: 1rem;
+  }
 }
 
 #col-container {
@@ -389,6 +543,12 @@ h6 {
   margin-bottom: 10px;
 }
 
+@media (max-width: 376px) {
+  #titre-skills {
+    font-size: 1.5rem;
+  }
+}
+
 #portfolio {
   border-top: 1px solid white;
 }
@@ -486,6 +646,40 @@ h6 {
           transform: scale(1.1);
   -webkit-transition: 2ms;
   transition: 2ms;
+}
+
+@media (max-width: 376px) {
+  #titre-portfolio {
+    font-size: 1.5rem;
+  }
+  .card aos-init aos-animate {
+    margin: 0;
+  }
+  .container-card {
+    margin: 0;
+  }
+  .card {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  #card-1 {
+    margin: 7px 0px;
+  }
+  #card-2 {
+    margin: 7px 0px;
+  }
+  #card-3 {
+    margin: 7px 0px;
+  }
+  #card-4 {
+    margin: 7px 0px;
+  }
+  #card-5 {
+    margin: 7px 0px;
+  }
+  #card-6 {
+    margin: 7px 0px;
+  }
 }
 
 .form-container {
@@ -635,5 +829,14 @@ li {
 
 li img {
   margin-right: 5px;
+}
+
+@media (max-width: 376px) {
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */

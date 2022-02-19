@@ -25,4 +25,8 @@ li{
         margin-right: 5px;
     }
 }
-  
+  @media (max-width: 376px){
+      .footer-container{
+          flex-direction: column;
+      }
+    }

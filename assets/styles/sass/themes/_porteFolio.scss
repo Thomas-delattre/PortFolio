@@ -83,3 +83,38 @@
     transition: 2ms;
   }
 }
+@media (max-width: 376px){
+     #titre-portfolio{
+      font-size: 1.5rem;
+     }
+     .card aos-init aos-animate{
+       margin: 0;
+     }
+  
+     .container-card
+     {
+       margin: 0;
+     }
+     .card{
+       max-width: 100px;
+       max-height: 100px;
+     }
+     #card-1{
+      margin: 7px 0px;
+     }
+     #card-2{
+      margin: 7px 0px;
+     }
+     #card-3{
+      margin: 7px 0px;
+     }
+     #card-4{
+      margin: 7px 0px;
+     }
+     #card-5{
+      margin: 7px 0px;
+     }
+     #card-6{
+      margin: 7px 0px;
+     }
+}
