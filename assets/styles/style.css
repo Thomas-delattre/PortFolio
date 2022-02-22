@@ -268,9 +268,30 @@ a:hover {
   }
 }
 
+@media (max-width: 660px) {
+  .nav-bar a {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 550px) {
   .nav-bar a {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-bar a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-bar li {
+    margin: 10px;
+  }
+  .nav-bar a {
+    font-size: 0.8rem;
   }
 }
 
@@ -329,10 +350,11 @@ a:hover {
 .presentation-container {
   text-align: center;
   border-bottom: 1px solid white;
+  min-height: 600px;
 }
 
 .presentation-container h3 {
-  margin: 50px auto;
+  margin: 100px auto;
   font-size: 3rem;
   color: #f3f0f0;
   font-family: "Architects Daughter", cursive;
